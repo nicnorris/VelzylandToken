@@ -1,7 +1,7 @@
 async function main() {
   const initialSupply = ethers.utils.parseEther("1000");
-  const DLKToken = await hre.ethers.getContractFactory("DLKToken");
-  const token = await DLKToken.deploy(initialSupply);
+  const VLZToken = await hre.ethers.getContractFactory("VLZToken");
+  const token = await VLZToken.deploy(initialSupply);
 
   await token.deployed();
 
